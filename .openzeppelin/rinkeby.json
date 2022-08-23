@@ -1,0 +1,156 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xf6C4626cA3a992cdada477027bB86a44c5c4Aa2A",
+    "txHash": "0x7ecd7c50776db803897dd1562680521a7bf4f23b583d1d61338b06409df985a4"
+  },
+  "proxies": [
+    {
+      "address": "0x46761fc8Ed37851cd902327A3b3b35BB5F2EbF2a",
+      "txHash": "0x7473ee634dd7ebf77dd918ebc1022fea6015a55336bb716f8228f85446b11985",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "7b64416585dc203c4e808dfb70492ea09fca92d5452542e23300c3b64cb16081": {
+      "address": "0xD06691234F1f9FA36fB38Ec8dD1b828D25C94ff8",
+      "txHash": "0x6f81478fa731abfb865dff2667bbb7b0c4bb790535c5e4a373fc24e9aef83462",
+      "layout": {
+        "storage": [
+          {
+            "label": "alldetails",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_array(t_struct(Details)8_storage)dyn_storage)",
+            "contract": "TodoList",
+            "src": "contracts/todo.sol:16"
+          },
+          {
+            "label": "ID",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TodoList",
+            "src": "contracts/todo.sol:18"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Details)8_storage)dyn_storage": {
+            "label": "struct TodoList.Details[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_struct(Details)8_storage)dyn_storage)": {
+            "label": "mapping(address => struct TodoList.Details[])",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Details)8_storage": {
+            "label": "struct TodoList.Details",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "text",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "050c9885eaf631c2be8c0db60f0d0b2516d4cf043f02ac01b806756efe637014": {
+      "address": "0x8d9E61149e3569B9234a683eC0474db544e2Eed7",
+      "txHash": "0x2f94b07b402bd383d89f8633a2b89c19791b1a6900ab240166d54d4b24c3d801",
+      "layout": {
+        "storage": [
+          {
+            "label": "alldetails",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_array(t_struct(Details)8_storage)dyn_storage)",
+            "contract": "TodoListV2",
+            "src": "contracts/todoV2.sol:16"
+          },
+          {
+            "label": "ID",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "TodoListV2",
+            "src": "contracts/todoV2.sol:18"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Details)8_storage)dyn_storage": {
+            "label": "struct TodoListV2.Details[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_struct(Details)8_storage)dyn_storage)": {
+            "label": "mapping(address => struct TodoListV2.Details[])",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Details)8_storage": {
+            "label": "struct TodoListV2.Details",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "text",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
